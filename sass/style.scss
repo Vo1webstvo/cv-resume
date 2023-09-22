@@ -16,7 +16,8 @@ body {
 //-----------navigation panel------------//
 
 .navigation {
-  position: static;
+  position: fixed;
+  width: 100%;
   display: flex;
   align-items: center;
   background-color: #1976d2;
@@ -39,7 +40,7 @@ body {
 
 //------header----------//
 .header {
-  padding: 10px 0;
+  padding: 62px 0 10px 0;
   background-color: #f3f6f9;
   &__wrapper {
     display: flex;
@@ -98,6 +99,7 @@ body {
   background-color: #f3f6f9;
   &__wrapper {
     display: flex;
+    justify-content: space-around;
   }
   &__title {
     font-weight: 700;
@@ -114,9 +116,12 @@ body {
       line-height: 32px;
     }
   }
-  // &__education {
-  //   &-data {
-  //     text-align: center;
-  //   }
-  // }
+
+  .experience {
+    &__ul {
+      &-list {
+        display: flex;
+      }
+    }
+  }
 }
