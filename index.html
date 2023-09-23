@@ -24,9 +24,11 @@
           <li class="navigation__list">
             <a href="#education" class="navigation__link">Образование</a>
           </li>
-          <li class="navigation__list"><a href="#" class="navigation__link">Опыт</a></li>
-          <li class="navigation__list"><a href="#" class="navigation__link">Портфолио</a></li>
-          <li class="navigation__list"><a href="#" class="navigation__link">Навыки</a></li>
+          <li class="navigation__list"><a href="#experience" class="navigation__link">Опыт</a></li>
+          <li class="navigation__list">
+            <a href="#portfolio" class="navigation__link">Портфолио</a>
+          </li>
+          <li class="navigation__list"><a href="skills" class="navigation__link">Навыки</a></li>
           <li class="navigation__list"><a href="#" class="navigation__link">Резюме</a></li>
         </ul>
       </div>
@@ -114,38 +116,228 @@
               </ul>
             </div>
           </section>
-          <section id="experience">
-            <div class="content__experience">
-              <h2 class="content__title">Опыт работы</h2>
-              <ul class="experience__ul">
-                <li class="experience__ul-list">
-                  <div>
-                    <div class="content__education-data">2022-2023</div>
-                    <div class="content__education-title">Пет проекты</div>
-                  </div>
-                  <div>
-                    <div class="content__education-data"></div>
-                    <div class="content__education-title">фафа</div>
-                  </div>
-                </li>
+          <div class="right-block">
+            <section id="experience">
+              <div class="content__experience">
+                <h2 class="content__title">Опыт работы</h2>
+                <ul class="experience__ul">
+                  <li class="experience__ul-list">
+                    <div class="content__education-data">2023</div>
 
-                <li class="experience__ul-list">
-                  <div>
+                    <div class="experience__ul-wrapper-title">
+                      <div class="content__education-title">Frontend-разработчик(Пет проекты)</div>
+                      <div class="content__education-descr-first">
+                        Работа в экосистеме React js с использованием Redux Toolkit. Создание новых
+                        компонентов, работа с сервером(axios, createAsyncThunk, RKT query).
+                        Стилизация компонентов с применением препроцессора Scss, CSS modules.
+                        Рефакторинг своего кода с Javascript на Typescript. Работа с Git/Github
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="experience__ul-list">
                     <div class="content__education-data">2017-2023</div>
-                    <div class="content__education-title">"Вода Донбасса"</div>
-                  </div>
-                  <div>
-                    <div class="content__education-data">Инженер</div>
-                    <div class="content__education-title">
+
+                    <div class="content__education-descr">
                       Инженер ремонтно-строительного участка
                     </div>
-                  </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <section id="skills">
+              <h2 class="content__title">Навыки</h2>
+              <ul class="content__skills-list">
+                <li class="content__skills-item">
+                  <span>JavaScript</span>
+                </li>
+                <li class="content__skills-item">
+                  <span>Typescript</span>
+                </li>
+                <li class="content__skills-item">
+                  <span>React</span>
+                </li>
+                <li class="content__skills-item">
+                  <span>Redux</span>
+                </li>
+                <li class="content__skills-item">
+                  <span>HTML5</span>
+                </li>
+                <li class="content__skills-item">
+                  <span>CSS3</span>
+                </li>
+                <li class="content__skills-item">
+                  <span>Figma</span>
+                </li>
+                <li class="content__skills-item">
+                  <span>GIT</span>
+                </li>
+                <li class="content__skills-item">
+                  <span>Scss</span>
                 </li>
               </ul>
-            </div>
-          </section>
+            </section>
+          </div>
         </div>
       </div>
     </main>
+
+    <section id="portfolio">
+      <div class="portfolio">
+        <div class="container">
+          <h3 class="portfolio__title">Пет проекты</h3>
+          <ul class="portfolio__list">
+            <li class="portfolio__item">
+              <a
+                class="portfolio__link"
+                href="https://pizza-shop-vo1webstvo.vercel.app/?sortProperty=rating&value=0&pageCount=1"
+              >
+                <img
+                  class="portfolio__img"
+                  src="./assets//img/pizza-project.png"
+                  alt="pizza-project"
+                />
+              </a>
+              <div class="portfolio__description">
+                <span>онлайн-магазин, React, redux</span>
+              </div>
+            </li>
+
+            <li class="portfolio__item">
+              <a class="portfolio__link" href="https://marvel-ashy.vercel.app/">
+                <img class="portfolio__img" src="./assets//img/marvel.png" alt="pizza-project" />
+              </a>
+              <div class="portfolio__description">
+                <span>проект по комиксам Marvel, react, redux</span>
+              </div>
+            </li>
+
+            <li class="portfolio__item">
+              <a class="portfolio__link" href="https://user-list-five-psi.vercel.app/">
+                <img class="portfolio__img" src="./assets//img/userList.png" alt="pizza-project" />
+              </a>
+              <div class="portfolio__description">
+                <span>Простой список пользователей на react</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="resume">
+      <div class="container">
+        <div class="resume-image">
+          <img class="resume-img" src="./assets/img/me.png" alt="me" />
+        </div>
+        <div class="row resume-html" id="resume1">
+          <div class="">
+            <div class="b-resume-wrapper">
+              <div class="b-resume">
+                <div class="b-resume-main-title">
+                  <div class="b-resume-title">
+                    <strong>
+                      Соискание&nbsp;должности&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      Frontend&nbsp;/&nbsp;React&nbsp;Developer
+                    </strong>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="row b-resume-contacts">
+                    <div class="resume-photo">
+                      <img src="./assets/img/me.png" class="b-resume-photo" alt="my-photo" />
+                    </div>
+                    <div class="">
+                      <br />
+                      <br />
+                      <div class="b-resume-name">Евгений Горин</div>
+                      <ul class="b-resume-info resume-list">
+                        <li class="resume-item">
+                          <span> <strong>Город:</strong> </span> Санкт-Петербург / Ковров
+                        </li>
+                        <li class="resume-item">
+                          <span>
+                            <strong>Моб.</strong>
+                          </span>
+                          <a href="tel:+74943367910" class="resume-link"> 7-949-336-79-10 </a>
+                        </li>
+                        <li class="resume-item">
+                          <span>
+                            <strong>E-mail:</strong>
+                          </span>
+                          <a href="mailto:evgen1y-igorevich@yandex.com" class="resume-link">
+                            evgen1y-igorevich@yandex.com
+                          </a>
+                        </li>
+                        <li class="resume-item">
+                          <span>
+                            <strong>Telegram:</strong>
+                          </span>
+                          <a href="https://t.me/vo1webstvo" class="resume-link">Евгений </a>
+                        </li>
+                        <li class="resume-item">
+                          <span>
+                            <strong>Github:</strong>
+                          </span>
+                          <a href="https://github.com/Vo1webstvo" class="resume-link"> Евгений </a>
+                        </li>
+                        <li class="resume-item">
+                          <span>
+                            <strong>CV:</strong>
+                          </span>
+                          <a href="https://github.com/Vo1webstvo" class="resume-link"
+                            >https://github.com/Vo1webstvo
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="b-resume-education">
+                    <div class="b-resume-education-title">
+                      <span> <strong>Образование:</strong> </span> высшее
+                    </div>
+                    <ol>
+                      <li>ДГТУ, направление "Строительство"</li>
+                      <li>курсы и вебинары: HTML, CSS, Javascript, React js, Redux Toolkit</li>
+                      <li>RS-school, курс JavaScript/Front-end Developer</li>
+                    </ol>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="b-resume-merit">
+                    <div class="b-resume-merit-title">
+                      <span> <strong>Личностные качества:</strong> </span> целеустремлённость
+                    </div>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="b-resume-skills">
+                    <div class="b-resume-skills-title">
+                      <span>
+                        <strong>Навыки:</strong>
+                      </span>
+                    </div>
+                    <div class="skills__wrapper">
+                      <div class="skills__wrapper-name">
+                        <ol>
+                          <li>Языки: <strong>JavaScript, Typescript</strong></li>
+                          <li>Библиотеки: <strong>React js</strong></li>
+                          <li>Технологии: <strong>Redux, GIt, RKT Query</strong></li>
+                          <li>Макеты: <strong>Figma</strong></li>
+                          <li>Верстка:<strong>HTML5, CSS, SCSS, Matherial ui</strong></li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

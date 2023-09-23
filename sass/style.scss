@@ -96,6 +96,7 @@ body {
 
 //-----------content------------//
 .content {
+  padding: 10px 0 10px 0;
   background-color: #f3f6f9;
   &__wrapper {
     display: flex;
@@ -106,14 +107,16 @@ body {
     font-size: 43px;
     line-height: 80px;
     letter-spacing: 6px;
+    text-align: center;
   }
   ul {
     li {
+      margin-top: 25px;
       color: #555;
       list-style-type: none;
       font-weight: 400;
-      font-size: 20px;
-      line-height: 32px;
+      font-size: 16px;
+      line-height: 20px;
     }
   }
 
@@ -121,7 +124,306 @@ body {
     &__ul {
       &-list {
         display: flex;
+        .content__education-data {
+          width: 100px;
+        }
+        .experience__ul-wrapper-title {
+          width: 571px;
+        }
+        .content__education-title {
+          color: #555;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 32px;
+        }
+        .content__education-descr-first {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  &__skills {
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &-item {
+      list-style-type: none;
+      margin: 0.5vh 2vh;
+      span {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        background-color: #edeff0;
+        border: 1px solid transparent;
+        display: inline-block;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0 11px;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
       }
     }
   }
 }
+
+#education {
+  width: 40%;
+}
+
+.right-block {
+  width: 60%;
+}
+
+#skills {
+  margin-top: 20px;
+}
+
+//---------portfolio------------//
+.portfolio {
+  padding: 10px 0;
+  &__title {
+    color: black;
+    font-weight: 500;
+    font-size: 43px;
+    line-height: 80px;
+    letter-spacing: 6px;
+    text-align: center;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  &__item {
+    list-style-type: none;
+    width: 40%;
+    margin: 0 0 3vh 0;
+  }
+  &__img {
+    width: 100%;
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+}
+
+//-------------resume---------------//
+
+// .row:after {
+//   clear: both;
+// }
+
+// .row:before,
+// .row:after {
+//   display: table;
+//   content: ' ';
+// }
+
+// .row:after {
+//   clear: both;
+// }
+
+// .resume p {
+//   color: #a9a9a9;
+// }
+
+// .resume a {
+//   color: #a9a9a9;
+// }
+
+// .resume a:hover {
+//   text-decoration: none;
+// }
+
+// .resume a > p:hover {
+//   color: #fff;
+//   text-decoration: none;
+// }
+
+// #resume img {
+//   width: 100%;
+// }
+
+// .b-resume {
+//   color: #000;
+//   background: #fff;
+//   width: 100%;
+//   margin: 0 auto;
+//   padding: 10%;
+//   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+//   box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+// }
+
+// .b-resume-wrapper {
+//   padding: 5% 0;
+//   max-width: 900px;
+//   margin: 0 auto;
+// }
+
+// .b-resume-main-title:after {
+//   content: '';
+//   display: table;
+//   clear: both;
+// }
+
+// .b-resume-contacts {
+//   margin-top: 3%;
+// }
+
+// .b-resume-title {
+//   width: 210px;
+//   float: right;
+//   text-align: right;
+//   font-size: 15px;
+// }
+
+// .b-resume-photo {
+//   width: 100%;
+//   padding: 5% 10%;
+// }
+
+// .b-resume-name {
+//   padding: 24px 0 27px 0;
+//   font-size: 18px;
+// }
+
+// .b-resume-info {
+//   color: #000;
+// }
+
+// .b-resume-info span {
+//   font-weight: 500;
+// }
+
+// .b-resume-info a {
+//   color: #00afea;
+// }
+
+// .b-resume-info a:hover {
+//   border-bottom: 1px solid #00afea;
+// }
+
+// .b-resume-education {
+//   margin-top: 3%;
+// }
+
+// .b-resume-education li {
+//   font-size: 13px;
+// }
+
+// .b-resume-work {
+//   margin-top: 3%;
+// }
+
+// .b-resume-work-title span {
+//   font-size: 15px;
+// }
+
+// .b-resume-work li {
+//   font-size: 13px;
+// }
+
+// .b-resume-merit {
+//   margin-top: 3%;
+// }
+
+// .b-resume-merit-title span {
+//   font-size: 15px;
+// }
+
+// .b-resume-skills {
+//   margin-top: 3%;
+// }
+
+// .b-resume-skills-title span {
+//   font-size: 15px;
+// }
+
+// .b-resume-skills-title span {
+//   font-size: 15px;
+// }
+
+// .b-resume-skills span {
+//   font-size: 15px;
+// }
+
+// .skills__wrapper {
+//   display: flex;
+//   margin-left: 10px;
+// }
+
+// .skills__wrapper-name ol li {
+//   margin-top: 10px;
+//   font-size: 13px;
+// }
+
+// .b-resume-contacts {
+//   display: -webkit-box;
+//   display: -ms-flexbox;
+//   display: flex;
+// }
+
+// .resume-photo {
+//   max-width: 238px;
+//   margin: 0 30px 30px 30px;
+// }
+
+// .resume-list {
+//   list-style-type: none;
+// }
+
+// .resume-item {
+//   margin: 0;
+//   font-size: 14px;
+//   line-height: 1.428571429;
+// }
+
+// .resume-link {
+//   text-decoration: none;
+// }
+
+// .resume-link:hover {
+//   color: #00afea;
+// }
+
+// strong {
+//   font-size: 14px;
+//   line-height: 1.428571429;
+//   font-weight: bold;
+// }
+
+// .resume-image {
+//   display: none;
+// }
+
+// .resume-html {
+//   display: block;
+// }
+
+// .button_download a {
+//   padding: 9px 25px 12px 25px;
+//   color: #a9a9a9;
+//   display: block;
+//   font-style: italic;
+// }
+
+// .button_download {
+//   background-color: #045369;
+// }
+
+// .button_download a:hover {
+//   color: #fff;
+//   text-decoration: none;
+// }
+
+// @media (max-width: 830px) {
+//   .resume-image {
+//     display: block;
+//   }
+//   .resume-html {
+//     display: none;
+//   }
+// }
