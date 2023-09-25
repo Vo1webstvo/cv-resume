@@ -53,6 +53,9 @@ body {
       width: 90%;
     }
   }
+  &__nav {
+    display: none;
+  }
   h1 {
     font-weight: 700;
     font-size: 72px;
@@ -225,7 +228,7 @@ body {
   }
   &__title {
     width: 210px;
-    // float: right;
+    float: right;
     text-align: right;
     font-size: 15px;
   }
@@ -287,6 +290,157 @@ body {
       li {
         font-size: 13px;
         margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+  .navigation {
+    &__ul {
+      justify-content: space-around;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 720px;
+  }
+  .header {
+    h1 {
+      font-size: 40px;
+      line-height: 65px;
+    }
+    &__left {
+      &-img {
+        max-width: 358px;
+      }
+    }
+    &__title {
+      font-size: 27px;
+      line-height: 54px;
+    }
+    &__right {
+      padding: 0;
+    }
+    &__contacts {
+      margin-top: 0;
+      &-link {
+        font-size: 15px;
+      }
+      &-item {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .content {
+    &__title {
+      font-size: 30px;
+    }
+
+    .experience {
+      &__ul {
+        &-list {
+          .content__education-data {
+            width: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 540px;
+  }
+  .navigation {
+    display: none;
+  }
+
+  .header {
+    padding: 20px;
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__left {
+      display: flex;
+      justify-content: space-between;
+      &-img {
+        max-width: 300px;
+        height: 384px;
+      }
+    }
+    &__nav {
+      display: block;
+      ul {
+        list-style-type: none;
+        li {
+          width: auto;
+          margin-bottom: 20px;
+          text-align: right;
+          a {
+            font-size: 26px;
+            color: #000;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    h1 {
+      margin-top: 20px;
+      text-align: center;
+    }
+    &__title {
+      text-align: center;
+    }
+    &__contacts {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 320px;
+  }
+  .header {
+    padding: 20px;
+    &__left {
+      justify-content: unset;
+      &-img {
+        max-width: 170px;
+        height: 213px;
+      }
+    }
+    &__nav {
+      margin-left: 30px;
+      ul {
+        li {
+          a {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    h1 {
+      font-size: 36px;
+    }
+    &__title {
+      font-size: 23px;
+    }
+    &__contacts {
+      width: 280px;
+      &-list {
+        flex-direction: column;
+      }
+      &-item {
+        width: unset;
       }
     }
   }
