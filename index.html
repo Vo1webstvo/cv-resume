@@ -20,7 +20,7 @@
     <nav class="navigation">
       <div class="container">
         <ul class="navigation__ul">
-          <li class="navigation__list"><a href="#" class="navigation__link">Контакты</a></li>
+          <li class="navigation__list"><a href="#header" class="navigation__link">Контакты</a></li>
           <li class="navigation__list">
             <a href="#education" class="navigation__link">Образование</a>
           </li>
@@ -33,19 +33,19 @@
         </ul>
       </div>
     </nav>
-    <header class="header">
+    <header id="header" class="header">
       <div class="container">
         <div class="header__wrapper">
           <div class="header__left">
             <img class="header__left-img" src="assets//img//me.png" alt="me" />
             <div class="header__nav">
               <ul>
-                <li><a href="#">Контакты</a></li>
-                <li><a href="#">Образование</a></li>
-                <li><a href="#">Опыт</a></li>
-                <li><a href="#">Портфолио</a></li>
-                <li><a href="#">Навыки</a></li>
-                <li><a href="#">Резюме</a></li>
+                <li><a href="#header">Контакты</a></li>
+                <li><a href="#education">Образование</a></li>
+                <li><a href="#experience">Опыт</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#skills">Навыки</a></li>
+                <li><a href="#resume">Резюме</a></li>
               </ul>
             </div>
           </div>
@@ -124,8 +124,6 @@
             </div>
           </section>
 
-
-          
           <div class="right-block">
             <section id="experience">
               <div class="content__experience">
@@ -169,7 +167,10 @@
                   <span>React</span>
                 </li>
                 <li class="content__skills-item">
-                  <span>Redux</span>
+                  <span>Redux Toolkit</span>
+                </li>
+                <li class="content__skills-item">
+                  <span>RTQ Query</span>
                 </li>
                 <li class="content__skills-item">
                   <span>HTML5</span>
@@ -193,7 +194,7 @@
       </div>
     </main>
 
-    <!-- <section id="portfolio">
+    <section id="portfolio">
       <div class="portfolio">
         <div class="container">
           <h3 class="portfolio__title">Пет проекты</h3>
@@ -210,33 +211,40 @@
                 />
               </a>
               <div class="portfolio__description">
-                <span>онлайн-магазин, React, redux</span>
+                <span>онлайн-магазин, SPA, React, Redux Toolkit, Router v6, Typescript</span>
               </div>
             </li>
 
             <li class="portfolio__item">
               <a class="portfolio__link" href="https://marvel-ashy.vercel.app/">
-                <img class="portfolio__img" src="./assets//img/marvel.png" alt="pizza-project" />
+                <img class="portfolio__img" src="./assets//img/marvel.png" alt="marvel-project" />
               </a>
               <div class="portfolio__description">
-                <span>проект по комиксам Marvel, react, redux</span>
+                <span
+                  >проект по комиксам Marvel, SPA, React, Redux Toolkit, RTQ Query, Router v6,
+                  typescript</span
+                >
               </div>
             </li>
 
             <li class="portfolio__item">
               <a class="portfolio__link" href="https://user-list-five-psi.vercel.app/">
-                <img class="portfolio__img" src="./assets//img/userList.png" alt="pizza-project" />
+                <img
+                  class="portfolio__img"
+                  src="./assets//img/userList.png"
+                  alt="userlist-project"
+                />
               </a>
               <div class="portfolio__description">
-                <span>Простой список пользователей на react</span>
+                <span>список пользователей на React, Typescript</span>
               </div>
             </li>
           </ul>
         </div>
       </div>
-    </section> -->
+    </section>
 
-    <!-- <section id="resume" class="resume">
+    <section id="resume" class="resume">
       <div class="container">
         <div class="resume__wrapper">
           <div class="resume__title">
@@ -251,8 +259,6 @@
               <img src="./assets/img/me.png" class="resume__contacts-img" alt="my-photo" />
             </div>
             <div class="">
-              <br />
-              <br />
               <div class="resume__name">Евгений Горин</div>
               <ul class="resume__info">
                 <li class="resume__info-item">
@@ -321,7 +327,7 @@
             </div>
 
             <ol>
-              <li>Языки: <strong>JavaScript (Typescript</strong></li>
+              <li>Языки: <strong>JavaScript (Typescript)</strong></li>
               <li>Библиотеки: <strong>React js</strong></li>
               <li>Технологии: <strong>Redux, GIt, RKT Query</strong></li>
               <li>Макеты: <strong>Figma</strong></li>
@@ -330,6 +336,6 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
   </body>
 </html>

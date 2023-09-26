@@ -57,6 +57,7 @@ body {
     display: none;
   }
   h1 {
+    width: 100px;
     font-weight: 700;
     font-size: 72px;
     line-height: 84px;
@@ -209,6 +210,7 @@ body {
   }
   &__img {
     width: 100%;
+    height: 85%;
     -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
@@ -295,6 +297,8 @@ body {
   }
 }
 
+//----------@media-------------//
+
 @media (max-width: 1200px) {
   .container {
     width: 960px;
@@ -302,6 +306,11 @@ body {
   .navigation {
     &__ul {
       justify-content: space-around;
+    }
+  }
+  .header {
+    h1 {
+      width: initial;
     }
   }
 }
@@ -349,8 +358,29 @@ body {
           .content__education-data {
             width: 40px;
           }
+          .experience__ul-wrapper-title {
+            margin-left: 20px;
+          }
+          .content__education-title {
+            line-height: 19px;
+          }
+          .content__education-descr {
+            margin-left: 20px;
+          }
         }
       }
+    }
+  }
+
+  .resume {
+    &__contacts {
+      margin-top: 75px;
+    }
+    &__name {
+      text-align: center;
+    }
+    &__info {
+      margin-left: 43px;
     }
   }
 }
@@ -403,6 +433,32 @@ body {
       margin: 0 auto;
     }
   }
+  .portfolio {
+    &__item {
+      width: 80%;
+      margin-top: 40px;
+    }
+    &__title {
+      margin-top: 20px;
+      font-size: 30px;
+      line-height: 25px;
+    }
+  }
+
+  .resume {
+    &__name {
+      font-size: 22px;
+      padding: 0;
+    }
+    &__info {
+      margin-left: 0;
+    }
+  }
+  .content {
+    &__title {
+      font-size: 25px;
+    }
+  }
 }
 
 @media (max-width: 576px) {
@@ -410,7 +466,7 @@ body {
     width: 320px;
   }
   .header {
-    padding: 20px;
+    padding: 15px;
     &__left {
       justify-content: unset;
       &-img {
@@ -419,7 +475,7 @@ body {
       }
     }
     &__nav {
-      margin-left: 30px;
+      margin-left: 8px;
       ul {
         li {
           a {
@@ -429,10 +485,10 @@ body {
       }
     }
     h1 {
-      font-size: 36px;
+      font-size: 30px;
     }
     &__title {
-      font-size: 23px;
+      font-size: 20px;
     }
     &__contacts {
       width: 280px;
@@ -441,6 +497,44 @@ body {
       }
       &-item {
         width: unset;
+      }
+    }
+  }
+
+  .content {
+    padding: 10px;
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__title {
+      text-align: center;
+    }
+    .experience {
+      &__ul {
+        &-list {
+          .experience__ul-wrapper-title {
+            width: 260px;
+          }
+          .content__education-descr-first {
+            width: 250px;
+          }
+        }
+      }
+    }
+  }
+
+  #education {
+    width: initial;
+  }
+  .right-block {
+    margin-top: 30px;
+    width: initial;
+  }
+
+  .resume {
+    &__contacts {
+      &-photo {
+        display: none;
       }
     }
   }
